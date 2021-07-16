@@ -24,14 +24,12 @@ public class Main {
         switch (operation) {
             case '+':
                 System.out.println(getSum(operand1, operand2));
-                log.info("Adding");
                 break;
             case '-':
                 System.out.println(getSub(operand1, operand2));
                 break;
             case '*':
                 System.out.println(getMultipl(operand1, operand2));
-                log.info("Multiplication");
                 break;
             case '/':
                 System.out.println(getDivide(operand1, operand2));
@@ -45,14 +43,17 @@ public class Main {
 
 
     public static int getSum(int operand1, int operand2) {
+        log.info("Adding");
         return operand1 + operand2;
     }
 
     public static int getSub(int operand1, int operand2) {
+        log.info("Subtraction");
         return operand1 - operand2;
     }
 
     public static int getMultipl(int operand1, int operand2) {
+        log.info("Multiplication");
         return operand1 * operand2;
     }
 
